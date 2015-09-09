@@ -1,0 +1,9 @@
+<h1>right_this_way</h1>
+
+<%=form_for :user, url: users_path do |f| %>
+  <%= f.label :name, "who_will_you_be_?" %>
+  <%= f.text_field :name %>
+  <%= f.label :password, "tell_me_a_secret" %>
+  <%= f.password_field :password %>
+  <%= f.submit %>
+<%end%>

@@ -1,0 +1,13 @@
+<h4>upload_to_mainframe</h4>
+
+<%=form_for :track, url: tracks_path do |f| %>
+  <%= f.label :title, "title" %>
+  <%= f.text_field :title %><br>
+  <%= f.label :artist, "artist" %>
+  <%= f.text_field :artist %><br>
+  <%= f.label :album, "album" %>
+  <%= f.text_field :album %><br>
+  <%= f.label :genre, "genre" %>
+  <%= f.text_field :genre %>
+  <%= f.submit %>
+<%end%>

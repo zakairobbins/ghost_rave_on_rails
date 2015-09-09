@@ -1,0 +1,7 @@
+<h1>ghost_rave</h1>
+<% if !auth_logged_in? %>
+  <h3>Welcome</h3>
+<% else %>
+  <h3>Welcome <%= auth_current_user.name %></h3>
+  <%= render "tracks/track_list" %>
+<% end %>
